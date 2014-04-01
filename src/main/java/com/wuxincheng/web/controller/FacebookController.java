@@ -1,4 +1,4 @@
-package com.wuxincheng.web.share.controller;
+package com.wuxincheng.web.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,6 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * 测试
+ * 
+ * @author wuxincheng
+ *
+ */
 @Controller
 @RequestMapping("/facebook")
 public class FacebookController {
