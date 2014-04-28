@@ -17,8 +17,8 @@
 	Configure the location of uploaded files. See the following article for more details:
 	http://docs.cksource.com/CKFinder_2.x/Developers_Guide/Java/Configuration/baseURL_and_baseDir
 	-->
-	<baseDir>/wuxincheng-web/blogimages/</baseDir>
-	<baseURL>/wuxincheng-web/blogimages/</baseURL>
+	<baseURL>/userfiles/</baseURL>
+	<baseDir>D:\wuxincheng-web\userfiles\</baseDir>
 	<licenseKey></licenseKey>
 	<licenseName></licenseName>
 	<!--
@@ -103,7 +103,7 @@
 		</accessControl>
 	</accessControls>
 	<thumbs>
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<url>%BASE_URL%_thumbs/</url>
 		<directory>%BASE_DIR%_thumbs</directory>
 		<directAccess>false</directAccess>

@@ -12,16 +12,17 @@
 <link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
 
 <!-- 
-<link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/assets/js/ckeditor/contents.css" />
+<link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/ckeditor/contents.css" />
  -->
-<script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/ckfinder/ckfinder.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/ckfinder/ckfinder.js"></script>
 <!-- 
-<script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/ckeditor/config.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/config.js"></script>
  -->
 <script type="text/javascript">
 	window.onload = function() {
-		CKEDITOR.replace('content');
+		var editor = CKEDITOR.replace('content');
+		CKFinder.setupCKEditor(editor,'/ckeditor/');
 	}
 </script>
 </head>
