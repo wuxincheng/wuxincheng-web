@@ -15,11 +15,10 @@ CKEDITOR.editorConfig = function( config ) {
 	config.baseHref = location.protocol + "//" + location.hostname + contextPath;
 	 */
 	
+	config.height = 500; // 设置高度 
+	
 	config.language = 'zh-cn';
     config.baseFloatZIndex = 19900;
-    
-    config.filebrowserWindowWidth = '1000';
-    config.filebrowserWindowHeight = '700';
 	
 	config.filebrowserBrowseUrl = '/wuxincheng-web/ckfinder/ckfinder.html';    
     config.filebrowserImageBrowseUrl = '/wuxincheng-web/ckfinder/ckfinder.html?type=Images';

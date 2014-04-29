@@ -53,11 +53,11 @@
 	</div>
 
 	<div class="ya2dan-container">
-		<form id="form1" name="form1" method="post" action="/ckeditor/display.jsp">  
+		<form id="form1" name="form1" method="post" action="<%=request.getContextPath()%>/ckeditor/main">  
 			<table align="center">  
 			    <tr>
 			        <td>
-			        	<textarea cols="80" id="content" name="content"></textarea>
+			        	<textarea id="content" name="content"></textarea>
 			        </td>  
 			    </tr>
 			    <tr height="50px">

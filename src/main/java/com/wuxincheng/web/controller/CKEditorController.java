@@ -24,5 +24,12 @@ public class CKEditorController {
 		
 		return "ckeditor/main";
 	}
+	
+	@RequestMapping(value = "/domain")
+	public String domain(Model model) {
+		logger.info("ckeditor test");
+		
+		return "ckeditor/main";
+	}
 
 }
