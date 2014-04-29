@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.wuxincheng.util.CatchImageURLUtil;
+
 /**
  * CKEditor
  * 
@@ -26,8 +28,14 @@ public class CKEditorController {
 	}
 	
 	@RequestMapping(value = "/domain")
-	public String domain(Model model) {
-		logger.info("ckeditor test");
+	public String domain(Model model, String content) throws Exception {
+		logger.info("do ckeditor test");
+		
+		logger.info("content: " + content);
+		
+		String imgURL = CatchImageURLUtil.getFirstImgURLFromContent(content);
+		
+		logger.info("第一张图片的URL地址：" + imgURL);
 		
 		return "ckeditor/main";
 	}

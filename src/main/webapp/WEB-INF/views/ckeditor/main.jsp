@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="ya2dan-container">
-		<form id="form1" name="form1" method="post" action="<%=request.getContextPath()%>/ckeditor/main">  
+		<form id="form1" name="form1" method="post" action="<%=request.getContextPath()%>/ckeditor/domain">  
 			<table align="center">  
 			    <tr>
 			        <td>
