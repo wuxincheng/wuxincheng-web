@@ -27,6 +27,12 @@ public class CatchImageURLUtil {
 	// 获取src路径的正则
 	private static final String IMGSRC_REG = "http:\"?(.*?)(\"|>|\\s+)";
 
+	/**
+	 * 测试
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		CatchImageURLUtil cm = new CatchImageURLUtil();
 		// 获得html文本内容
