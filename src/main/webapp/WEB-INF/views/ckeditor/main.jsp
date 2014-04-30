@@ -11,14 +11,8 @@
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
 
-<!-- 
-<link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/ckeditor/contents.css" />
- -->
 <script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/ckfinder/ckfinder.js"></script>
-<!-- 
-<script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/config.js"></script>
- -->
 <script type="text/javascript">
 	window.onload = function() {
 		var editor = CKEDITOR.replace('content');
