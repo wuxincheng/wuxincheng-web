@@ -54,7 +54,7 @@
 			        	<textarea id="content" name="content"></textarea>
 			        </td>  
 			    </tr>
-			    <tr height="50px">
+			    <tr height="51px">
 			        <td>
 				        <input type="submit" name="Submit" value="提交" class="btn" /> 
 				        <input type="reset" name="Reset" value="重置" class="btn" />
