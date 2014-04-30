@@ -4,20 +4,9 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
-	
-	/*
-	var contextPath = location.pathname;
-	var index =contextPath.substr(1).indexOf("/");
-	contextPath = contextPath.substr(0,index+1);
-	config.baseHref = location.protocol + "//" + location.hostname + contextPath;
-	 */
-	
 	config.height = 500; // 设置高度 
 	
-	config.language = 'zh-cn'; // zh-cn / en
+	config.language = 'zh-cn'; // 中文配置zh-cn / en
     config.baseFloatZIndex = 19900;
 	
 	config.filebrowserBrowseUrl = '/wuxincheng-web/ckfinder/ckfinder.html';    
@@ -27,10 +16,10 @@ CKEDITOR.editorConfig = function( config ) {
 	config.filebrowserImageUploadUrl = '/wuxincheng-web/ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Images';
 	config.filebrowserFlashUploadUrl = '/wuxincheng-web/ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Flash';
 	
-	// 配置指定字体（自己想要什么字体就配什么字体）
+	// 配置指定字体
 	// config.font_names = '微软雅黑;Arial;宋体;楷体_GB2312;新宋体;黑体;隶书;幼圆;Courier New';
 	
-	// 设置工具栏可折叠（减少toolbar的占用空间）
+	// 设置工具栏可折叠(减少toolbar的占用空间)
 	// config.toolbarCanCollapse = true;
 	
 };
@@ -44,17 +33,17 @@ CKEDITOR.on( 'dialogDefinition', function( ev ) {
 	// interested in (the 'image' dialog). This dialog name found using DevTools plugin
 	if ( dialogName == 'image' ) {
 		// Remove the 'Link' and 'Advanced' tabs from the 'Image' dialog.
-		dialogDefinition.removeContents( 'Link' ); //
-		dialogDefinition.removeContents( 'advanced' );
+		dialogDefinition.removeContents( 'Link' ); // 删除"链接"选项卡
+		dialogDefinition.removeContents( 'advanced' ); // 删除"高级"选项卡
 
-		// Get a reference to the 'Image Info' tab.
+		// 获取"图像信息"属性
 		var infoTab = dialogDefinition.getContents( 'info' );
 
-		// Remove unnecessary widgets/elements from the 'Image Info' tab.         
-		infoTab.remove( 'txtHSpace');
-		infoTab.remove( 'txtVSpace');
-		infoTab.remove( 'txtBorder');
-		infoTab.remove( 'cmbAlign' );
-        infoTab.remove( 'ratioLock' );
+		// 删除相关属性
+		infoTab.remove( 'txtHSpace'); // 水平间距
+		infoTab.remove( 'txtVSpace'); // 垂直间距
+		infoTab.remove( 'txtBorder'); // 边框大小
+		infoTab.remove( 'cmbAlign' ); // 对齐方式
+        infoTab.remove( 'ratioLock' ); // 锁定比例和原始尺寸
 	}
 });
