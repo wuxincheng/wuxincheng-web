@@ -34,6 +34,7 @@ CKEDITOR.on( 'dialogDefinition', function( ev ) {
 	if ( dialogName == 'image' ) {
 		// Remove the 'Link' and 'Advanced' tabs from the 'Image' dialog.
 		dialogDefinition.removeContents( 'Link' ); // 删除"链接"选项卡
+		dialogDefinition.removeContents( 'Upload' ); // 删除"上传"选项卡
 		dialogDefinition.removeContents( 'advanced' ); // 删除"高级"选项卡
 
 		// 获取"图像信息"属性
