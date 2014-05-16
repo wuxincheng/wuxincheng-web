@@ -8,7 +8,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>CKEditor - WEB - WUXINCHENG</title>
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
 
 <script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
