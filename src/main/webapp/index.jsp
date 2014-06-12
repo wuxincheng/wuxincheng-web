@@ -7,7 +7,22 @@
 <title>WEB - WUXINCHENG</title>
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
-<!-- AddThis Smart Layers END -->
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<style type="text/css">
+	#widget_bounds{
+		width: 200px;
+	}
+</style>
 
 </head>
 <body>
@@ -52,7 +67,26 @@
 
 	<div class="ya2dan-container">
 		<div class="hero-unit">
+		
+			<h5>facebook and google+</h5>
+			
+			<hr>
+			<div class="fb-follow" data-href="https://www.facebook.com/wxcking" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>
+			<hr>
+			
+<!-- 将此标记放置在你希望显示小部件的位置。 -->
+<div class="g-follow" data-annotation="none" data-height="20" data-href="//plus.google.com/u/0/102141230398819709483" data-rel="author"></div>
 
+<!-- 将此标记放置在最后一个 小部件 标记之后。 -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'zh-CN'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 		</div>
 	</div>
 	
